@@ -17,6 +17,8 @@ test("creates an enemy object", ()=> {
 
 test("get enemy's health value", () => {
     const enemy = new Enemy('goblin', 'sword');
+    console.log(enemy.getHealth());
+
     expect (enemy.getHealth()).toEqual(expect.stringContaining(enemy.health.toString()));
 });
 
